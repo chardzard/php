@@ -1,0 +1,48 @@
+<head>
+	<title>Society Survey</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h1>INFX 2670 Assignment 1</h1>
+	<h3>Society Survey</h3>
+	<form action="survey.php" method="get">
+		<div>
+			<label for="name">Your name:</label><br>
+			<input type="text" name="name">
+		</div>
+		<div>
+			<label for="message">Is there anything more your society can do for you?</label><br>
+			<textarea name="message"></textarea>
+		</div>
+		<div>
+			<label for="satisfaction">How satisfied are you with the society?</label><br>
+			<input type="radio" name="satisfied" value="very">Very Satisfied</input><br>
+			<input type="radio" name="satisfied" value="some">Somewhat Satisfied</input><br>
+			<input type="radio" name="satisfied" value="not">Not Satisfied</input><br>
+		</div>
+		<div>
+			<label for="suggestions">What would you like to see us do?</label><br>
+			<input type="checkbox" name="idea1" value="">Stuff and things</label><br>
+			<input type="checkbox" name="idea2" value="">Stuff and things</label><br>
+			<input type="checkbox" name="idea3" value="">Stuff and things</label><br>
+		</div>
+		<div>
+			<label for="see">How often would you like to see your society executive?</label><br>
+			<select>
+				<option value="always">Always</option>
+				<option value="sometimes">Sometimes</option>
+				<option value="never">Never</option>
+			</select><br>
+		</div>
+		<div>
+			<input type="checkbox" name="email" value="email">Send results via email</input>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+</body>
